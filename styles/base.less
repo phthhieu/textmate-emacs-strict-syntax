@@ -1,0 +1,123 @@
+@import "syntax-variables";
+
+atom-text-editor, :host {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+}
+
+atom-text-editor .gutter, :host .gutter {
+  background-color: @syntax-gutter-background-color;
+  color: @syntax-gutter-text-color;
+}
+
+atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+  background-color: @syntax-gutter-background-color-selected;
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+  color: @syntax-gutter-text-color-selected;
+}
+
+atom-text-editor .wrap-guide, :host .wrap-guide {
+  color: @syntax-wrap-guide-color;
+}
+
+atom-text-editor .indent-guide, :host .indent-guide {
+  color: @syntax-indent-guide-color;
+}
+
+atom-text-editor .invisible-character, :host .invisible-character {
+  color: @syntax-invisible-character-color;
+}
+
+atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+  background-color: transparent;
+  border: @syntax-result-marker-color;
+}
+
+atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+  border: @syntax-result-marker-color-selected;
+}
+
+atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+  border-color: @syntax-cursor-color;
+}
+
+atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+  background-color: @syntax-selection-color;
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+  background-color: rgba(22, 1, 43, 0.92);
+}
+
+.comment {
+  color: #FF7D27;
+}
+
+.other.preprocessor {
+  color: #AEC4DE;
+}
+
+.string {
+  color: #FF9E7B;
+}
+
+.storage {
+  color: #94FE9A;
+}
+
+.storage.modifier {
+  color: #00FFFF;
+}
+
+.entity.name.class, .support.class {
+  color: #94FE9A;
+}
+
+.entity.name.function {
+  color: #81CEF9;
+}
+
+.keyword, .variable.language {
+  color: #00FFFF;
+}
+
+.invalid {
+  color: #FFFFFF;
+  background-color: #990000;
+}
+
+.invalid.trailing-whitespace {
+  color: #000000;
+  background-color: #FFD0D0;
+}
+
+.entity.name.tag.xml, .meta.xml-processing.html {
+  color: #7DFDFA;
+}
+
+.entity.name.tag.doctype.html, .meta.sgml.html {
+  color: #7DFDFA;
+}
+
+.entity.name.tag {
+  color: #9CCFF4;
+}
+
+.meta.tag, .declaration.tag {
+}
+
+.entity.other.attribute-name {
+  color: #EBDB8D;
+}
+
+.markup.heading {
+  color: #E27F3F;
+}
+
+.markup.underline.link {
+  font-weight: bold;
+  color: #FFFFFF;
+}
